@@ -1,0 +1,121 @@
+step 1 : create separate repo/folder
+
+step 2 : installing angual CLI in the UI repo
+    npm i @angular/cli
+step 3 : create new angular app
+    npm new loans-ui
+step 4 : verify app is up an running
+    ng serve
+step 5 : install bootstrap framework
+    npm i bootstrap@next 
+    npm i jquery --save
+
+
+setp 5: go to loans_ui and generate component
+    ng g c header
+    ng g footer
+    ng g sidebar
+
+setup layout
+
+========================
+step 6 : Create database
+
+step 7 : create models folder in loans_api
+    create models
+step 8 : Install mongoose 
+    npm i mongoose
+
+step 9 : setup  schema
+
+step 10 : create controllers
+
+In UI
+-----
+step 11 : create customers modules with component and add route in app routing
+    ng g module customers --route customers --module app.module
+
+step 12: generate auth module 
+    ng g module  auth
+        cd auth
+        ng g component new-user    
+
+npm i cors..
+
+
+
+
+
+
+
+
+
+ng new <project_name>
+ng generate component <component_name>
+ng generate module <module_name>
+ng generate pipe <pipe_name>
+ng generate services <service_name>
+ng generate directive
+
+ng serve
+ng test
+	- test and run all out unit test script
+
+ng e2e
+	- test and run alll our end to end test
+
+ng lint
+	-Rules that will follow into our application
+
+
+ng g c header
+ng g c sidebar
+ng g c footer
+
+-----------------------------
+Create module   
+    ng g module contacts
+    ng g module leads
+    ng g module settings
+    ng g module profile
+    ng g module authentication
+Create component
+    cd src/app/<module_name>
+    authentication module_name
+        - new-user
+        - login
+        - forgot-password
+        - reset-password
+
+    ng g component add-contact
+    ng g component         
+
+Component life cycle hook
+    -ngOnChanges()
+    -ngOnInit()
+    -ngAfterViewInit()
+    -ngOnDestroy()
+    -ngDoCheck()
+    -....
+
+ Communication betwe
+
+ parent child relationship
+ ---
+
+ Related component
+ parent -> child
+ @input directive
+ child -> parent   
+  @output directive
+UnRelated Component
+    Coponent1 -> services <- Component2
+
+To generate directive   
+    ng g directive <directive_name>
+
+component directive
+stuctural directive
+behaiviour directive
+
+
